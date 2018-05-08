@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br"/>
+	<head>
+		<meta charset="UTF-8"/>
+
+	<head/>
+	
+	<body>
+
+		<form name="formulario" action="form.php" method="post" enctype="application/x-www.form.urlencoded">
+			<fieldset>
+				<legend>Dados pessoais</legend>
+				<p>
+				<label for="nome">Nome: </label>
+				<input type="text" name="nome" id="nome" title="nome" size="60" placeholder="Digite seu nome completo" required autofocus/>
+				</p>
+				<label for="email">Email: </label>
+				<input type="email" name="email" id="email" title="Email" size="66" placeholder="exemplo: contato@logicus.com.br" required/>
+				</p>
+				<p>
+				<label for="estado">Estado : </label>
+				<select name="estado" id="estado">
+					<option selected="selected">Escolha um estado</option>
+					<option value="Paraná">Parana</option>
+					<option value="Santa Catarina">Santa Catarina</option>
+					<option value="Rio Grande do Sul">Rio grande do Sul</option>
+				<select>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Produtos: </legend>
+				<p>
+				<input mame="produtos" id="camiseta" type="checkbox" value="camiseta"/>
+				<label for="camiseta">Camiseta</label>
+				<label for="qtd_camiseta" ide="qtd_camiseta" type="number" min="1" max="10" value="1"/>
+				</p>
+				<p>
+				<input name="produtos" id="bone" type="checbox" value="Bone"/>
+				<label for"bone">Bone</label>
+				<input name="quantidade" id="qtde_bone" type="number" min="1" max="10" value="1"/>
+				</p>
+				<p>
+				<input name="produtos" id="adesivo" type="checkbox" value="Adesivo"/>
+				<label for="adesivo">Adesivo</label>
+				<label for="qtde_adesivo" id="qtde_adesivo" type="number" min="1" max="10" value"1"/>
+				</p>
+			</fieldset>
+				<p>
+				<label for="mensagem">Mensagem: </label>
+			</p>
+			<p>
+			<textarea name="mensagem" id="mensagem" rows="6" cols="50" title="Digite sua mensagem" placeholder="Digite aqui sua mensagem" required></textarea>
+			</p>
+			<p>
+			<input type="submit" value="enviar"/>
+			</p>
+		</form>
+
+	</body>
+
+</html>	
