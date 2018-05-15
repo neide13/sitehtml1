@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		
+		<title>AutomÃ³veis</title>
+
+		<meta charset="UTF-8"/>
+		<meta name="author" contents="Neide"/>
+		<meta name="copyright" contents="2018 Elaborata"/>
+		<meta name="description" contents="Elaborata"/>
+		<meta name="generator" contents="vim"/>
+		<meta name="keywords" contents="marca, tipo, esportivo, popular/">
+		<meta name="language" contents="portuguÃªs"/> 
+		<meta name="rating" contents="general"/>
+		<meta name="viewport" contents="initial-scale=1,0"/>
+		<meta name="robots" contents="index, follow"/>
+
+	</head>
+
+	<body>
+		background-color: #f3e5f5;
+		
+		<h1>Cadastro de Clientes</h2>
+
+
+	<form>
+		<form name="cadastro" action="form.php" method="post" enctype="application/x-www.form.urlencoded">
+			<fieldset>
+				<legend>Dados pessoais</legend>
+				<p>
+				<label for="nome">Nome: </label>
+				<input type="text" name="nome" id="nome" title="nome" size="40" placeholder="Digite seu primeiro nome" required autofocus/>
+				<label for="sobrenome">Sobrenome: </label>
+				<input type="text" name="nome" id="nome" title="nome" size="40" placeholder="Digite seu sobrenome" required autofocus/>
+				<label for="data de nascimento">Data de nascimento: </label>
+				<input type="date" name="nascimento" id="nascimento" title="nascimento" size="10" placeholder="Digite a data de nascimento" required/>
+				</p>
+				<p>
+				<label for="email">Email: </label>
+				<input type="email" name="email" id="email" title="Email" size="66" placeholder="exemplo: contato@yahoo.com.br" required/>
+				<label for="estado">Estado : </label>
+				<select name="estado" id="estado">
+					<option selected="selected">Selecione o estado</option>
+					<option value="Amazonas">Amazonas</option>
+					<option value="Minas Gerais">Minas Gerais</option>
+					<option value="ParanÃ¡">ParanÃ¡</option>
+					<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+					<option value="Rio de Janeiro">Rio de Janeiro</option>
+					<option value="Santa Catarina">Santa Catarina</option>
+					<option value="SÃ£o Paulo">SÃ£o Paulo</option>
+				<select>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Sobre o produto: </legend>
+				</p>
+				<label for="cor">Selecione a marca do veÃ­culo: </label>
+				</p>
+				<input name="Honda" id="Honda" type="checkbox" value="Honda"/>
+				<label for="Honda">Honda</label>
+				</p>
+				<p>
+				<input name="Volkswagen" id="Volkswagen" type="checkbox" value="Volkswagen"/>
+				<label for="Volkswagen">Volkswagen</label>
+				</p>
+				<p>
+				<input name="Audi" id="Audi" type="checkbox" value="Audi"/>
+				<label for="Audi">Audi</label>
+				</p>
+				<p>
+				<input name="Hyunday" id="Hyunday" type="checkbox" value="Hyunday"/>
+				<label for="Hyunday">Hyunday</label>
+				</p>
+				<p>
+				<input name="Chevrolet" id="Chevrolet" type="checkbox" value="Chevrolet"/>
+				<label for="Chevrolet">Chevrolet</label>
+				</p>
+
+				</fieldset>
+				<p>
+				<label for="mensagem">Mensagem: </label>
+				</p>
+				<p>
+				<textarea name="mensagem" id="mensagem" rows="6" cols="50" title="Digite sua mensagem" placeholder="Digite sua mensagem" required></textarea>
+			</p>
+			<p>
+			<input type="submit" value="enviar"/>
+			</p>
+		</form>
+
+	</body>
+
+</html>
